@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+<header>
+    <h1 class="main_title">
+        #Jogo da <span class="title_velha_word">velha</span>
+     </h1>
+     <form class="form_name_players" id="form_name_players">
+        <label for="player1">Jogador 1:</label>
+        <input type="text" id="player1" class="player_input" placeholder="Player 1" onclick="disabledPlaceHolder(player1)">
+
+        <label for="player2">Jogador 2:</label>
+        <input type="text" id="player2" class="player_input" placeholder="Player 2" onclick="disabledPlaceHolder(player2)">
+
+        <div>
+            <button id="start_play_button" class="start_play_button">play</button>
+        </div>
+        
+     </form>
+     <div id="div_players_name" class="div_players_name">
+
+     </div>
+</header>
+<div class="buttonsContainer">
+    <div class="buttons" id="buttons">
+        <button id="field_1" class="buttonSimbols borderRadius-top-left border-left"></button>
+        <button id="field_2" class="buttonSimbols border-mid"></button>
+        <button id="field_3" class="buttonSimbols borderRadius-top-right border-right"></button>
+        <button id="field_4" class="buttonSimbols border-left"></button>
+        <button id="field_5" class="buttonSimbols border-mid"></button>
+        <button id="field_6" class="buttonSimbols border-right"></button>
+        <button id="field_7" class="buttonSimbols borderRadius-bottom-left border-left"></button>
+        <button id="field_8" class="buttonSimbols border-mid"></button>
+        <button id="field_9" class="buttonSimbols borderRadius-bottom-right border-right"></button>
+     </div>
+ </div>
+    </main>
+</body>
+</html>
